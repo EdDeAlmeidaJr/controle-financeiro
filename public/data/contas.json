@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "descricao": "Itaú"
+  },
+  {
+    "id": 2,
+    "descricao": "Bradesco"
+  },
+  {
+    "id": 3,
+    "descricao": "Poupança"
+  },
+  {
+    "id": 4,
+    "descricao": "Livros"
+  },
+  {
+    "id": 5,
+    "descricao": "Acesso Ed"
+  },
+  {
+    "id": 6,
+    "descricao": "Acesso Dai"
+  },
+  {
+    "id": 7,
+    "descricao": "Picpay Ed"
+  },
+  {
+    "id": 8,
+    "descricao": "Picpay Dai"
+  },
+  {
+    "id": 9,
+    "descricao": "MercadoPago Ed"
+  }
+]

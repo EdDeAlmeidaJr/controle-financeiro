@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "ano": 2022,
+    "mes": 1,
+    "dia": 10,
+    "conta": 1,
+    "tipo": "crédito",
+    "valor": 14400,
+    "descricao": "Salário MAXXIDATA"
+  },
+  {
+    "id": 2,
+    "ano": 2022,
+    "mes": 1,
+    "dia": 10,
+    "conta": 2,
+    "tipo": "crédito",
+    "valor": 16000,
+    "descricao": "Salário FASTDOLPHIN"
+  }
+]
