@@ -1,12 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
+// pages
+import Balance from './pages/Balance';
+import Homepage from './pages/Homepage';
+import Movement from './pages/Movement';
 
-    </div>
-  );
-}
+// components
+import Footer from './components/Footer';
+import Header from './components/Header';
+
+const App = () => (
+  <div className="App">
+    <Router>
+      <Header />
+      <div className='app-body'>
+        <Routes>
+          <Route path='/' element={<Homepage />} />
+          <Route path='/movement' element={<Movement />} />
+          <Route path='/balance' element={<Balance />} />
+        </Routes>
+      </div>
+      <Footer />
+    </Router>
+  </div>
+)
 
 export default App;
