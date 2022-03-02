@@ -5,9 +5,9 @@ import {
 } from 'react-router-dom';
 
 // pages
-import Balance from './pages/Balance';
+import Balanco from './pages/Balanco';
 import Homepage from './pages/Homepage';
-import Movement from './pages/Movement';
+import Movimento from './pages/Movimento';
 
 // components
 import Footer from './components/Footer';
@@ -20,8 +20,8 @@ const App = () => (
       <div className='app-body'>
         <Routes>
           <Route path='/' element={<Homepage />} />
-          <Route path='/movement' element={<Movement />} />
-          <Route path='/balance' element={<Balance />} />
+          <Route path='/movimento' element={<Movimento />} />
+          <Route path='/balanco' element={<Balanco />} />
         </Routes>
       </div>
       <Footer />
