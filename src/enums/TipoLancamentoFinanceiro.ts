@@ -1,6 +1,6 @@
 enum TipoLancamentoFinanceiro {
-  Credito = 'c',
-  Debito  = 'd'
+  Credito = 'cédito',
+  Debito  = 'débito'
 }
 
 export default TipoLancamentoFinanceiro;
