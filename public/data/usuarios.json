@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "nome": "Edvaldo Silva de Almeida Júnior",
+    "apelido": "Ed",
+    "email": "edvaldoajunior@gmail.com",
+    "celular": "(47) 99626-2369"
+  },
+  {
+    "id": 2,
+    "nome": "Daiely Fanchin",
+    "apelido": "Dai",
+    "email": "daifanchin@gmail.com",
+    "celular": "(47)99904-7093"
+  }
+]
