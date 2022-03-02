@@ -1,13 +1,62 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,100;1,300;1,400;1,900&display=swap");
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+$BASE_COLOR: #ff7f50;
+
+body {
+  font-family: "Roboto";
+  font-size: 14px;
+  div#root {
+    div.App {
+      div.app-header {
+        background-color: $BASE_COLOR;
+        div.row {
+          div.app-title {
+            font-family: "Pacifico";
+            font-weight: bold;
+            font-size: 3rem;
+            color: white;
+            text-shadow: 2px 2px 4px black;
+          }
+          div.app-menu {
+            div.app-menu-item {
+              display: inline-block;
+              font-size: 1.1rem;
+              text-align: center;
+              a {
+                text-decoration: none;
+                color: white;
+              }
+              a:hover {
+                color: beige;
+              }
+            }
+          }
+        }
+      }
+      div.app-body {
+        margin: 2rem 0rem 2rem 0rem;
+      }
+      div.app-footer {
+        font-family: "Pacifico";
+        text-shadow: 1px 1px 2px black;
+        color: white;
+        text-align: center;
+        background-color: $BASE_COLOR;
+        width: 80%;
+        margin: auto;
+        padding: 0.8rem;
+        -webkit-border-radius: 11px;
+        -moz-border-radius: 11px;
+        border-radius: 11px;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+        a:hover {
+          color: beige;
+        }
+      }
+    }
+  }
 }
