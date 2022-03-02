@@ -4,7 +4,7 @@ export default interface RegistroFinanceiro {
   ano: number;
   mes: number;
   dia: number;
-  conta: string;
+  conta: number;
   tipo: TipoLancamentoFinanceiro;
   valor: number;
   descricao: string;
