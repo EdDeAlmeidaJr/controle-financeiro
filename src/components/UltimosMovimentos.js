@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import UltimosMovimentosCabecalho from "./UltimosMovimentosCabecalho";
 
 import dataInvertida from "../utils/DataInvertida";
+import formatAsMoney from "../utils/FormatAsMoney";
 
 const UltimosMovimentos = () => {
   const [movementsList, setMovementsList] = useState([]);
@@ -24,7 +25,6 @@ const UltimosMovimentos = () => {
           j.conta = accountsList[j.id].descricao;
           return j;
         }))
-      console.log(result);
       setMovementsList(result);
     })();
   }, [accountsList]);
@@ -35,7 +35,7 @@ const UltimosMovimentos = () => {
         <h5>Últimos 20 movimentos</h5>
       </div>
       <div className="card-body">
-        <table className="table">
+        <table className="table table-striped">
           <UltimosMovimentosCabecalho />
           <tbody>
             {movementsList.map((mov) => (
@@ -43,7 +43,7 @@ const UltimosMovimentos = () => {
                 <td>{dataInvertida(mov.ano, mov.mes, mov.dia)}</td>
                 <td>{mov.conta}</td>
                 <td>{mov.tipo}</td>
-                <td>{mov.valor}</td>
+                <td>{formatAsMoney(mov.valor)}</td>
                 <td>{mov.descricao}</td>
               </tr>
             ))}

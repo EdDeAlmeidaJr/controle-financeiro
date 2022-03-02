@@ -1,5 +1,5 @@
 const UltimosMovimentosCabecalho = () => (
-  <thead>
+  <thead className="thead-dark">
     <tr>
       <th>Data</th>
       <th>Conta</th>
