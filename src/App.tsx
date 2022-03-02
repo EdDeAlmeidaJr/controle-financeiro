@@ -8,6 +8,7 @@ import {
 import Balanco from './pages/Balanco';
 import Homepage from './pages/Homepage';
 import Movimento from './pages/Movimento';
+import Orcamento from './pages/Orcamento';
 
 // components
 import Rodape from './components/Rodape';
@@ -22,6 +23,7 @@ const App = () => (
           <Route path='/' element={<Homepage />} />
           <Route path='/movimento' element={<Movimento />} />
           <Route path='/balanco' element={<Balanco />} />
+          <Route path='/orcamento' element={<Orcamento />} />
         </Routes>
       </div>
       <Rodape />
