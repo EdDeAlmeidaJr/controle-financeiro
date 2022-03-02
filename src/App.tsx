@@ -10,13 +10,13 @@ import Homepage from './pages/Homepage';
 import Movimento from './pages/Movimento';
 
 // components
-import Footer from './components/Footer';
-import Header from './components/Header';
+import Rodape from './components/Rodape';
+import Cabecalho from './components/Cabecalho';
 
 const App = () => (
   <div className="App">
     <Router>
-      <Header />
+      <Cabecalho />
       <div className='app-body'>
         <Routes>
           <Route path='/' element={<Homepage />} />
@@ -24,7 +24,7 @@ const App = () => (
           <Route path='/balanco' element={<Balanco />} />
         </Routes>
       </div>
-      <Footer />
+      <Rodape />
     </Router>
   </div>
 )
