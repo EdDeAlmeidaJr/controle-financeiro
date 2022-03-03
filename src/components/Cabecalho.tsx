@@ -1,8 +1,10 @@
+import React from 'react';
+
 import {
   Link
 } from 'react-router-dom';
 
-const Header = () => (
+const Cabecalho = () => (
   <div className="container-fluid app-header">
     <div className="row align-items-center">
       <div className="col-6 app-title">
@@ -26,4 +28,4 @@ const Header = () => (
   </div>
 )
 
-export default Header;
+export default Cabecalho;
