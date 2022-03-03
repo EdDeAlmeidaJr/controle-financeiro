@@ -2,46 +2,46 @@
   {
     "id": 1,
     "descricao": "Itaú",
-    "saldoImpl": 1500.23
+    "saldoImpl": "1500.23"
   },
   {
     "id": 2,
     "descricao": "Bradesco",
-    "saldoImpl": 3456.32
+    "saldoImpl": "3456.32"
   },
   {
     "id": 3,
     "descricao": "Poupança",
-    "saldoImpl": 356.01
+    "saldoImpl": "356.01"
   },
   {
     "id": 4,
     "descricao": "Livros",
-    "saldoImpl": 12.45
+    "saldoImpl": "12.45"
   },
   {
     "id": 5,
     "descricao": "Acesso Ed",
-    "saldoImpl": 112.34
+    "saldoImpl": "112.34"
   },
   {
     "id": 6,
     "descricao": "Acesso Dai",
-    "saldoImpl": 1234.56
+    "saldoImpl": "1234.56"
   },
   {
     "id": 7,
     "descricao": "Picpay Ed",
-    "saldoImpl": 5678.90
+    "saldoImpl": "5678.90"
   },
   {
     "id": 8,
     "descricao": "Picpay Dai",
-    "saldoImpl": 123.56
+    "saldoImpl": "123.56"
   },
   {
     "id": 9,
     "descricao": "MercadoPago Ed",
-    "saldoImpl": 34.89
+    "saldoImpl": "34.89"
   }
 ]
