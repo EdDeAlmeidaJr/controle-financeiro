@@ -1,3 +1,5 @@
+import React from "react";
+
 import PosicaoAtual from "../components/PosicaoAtual";
 import UltimosMovimentos from "../components/UltimosMovimentos";
 
