@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import UltimosMovimentosCabecalho from "./UltimosMovimentosCabecalho";
 
 import dataInvertida from "../utils/DataInvertida";
-import formatAsMoney from "../utils/FormatAsMoney";
 
 const UltimosMovimentos = () => {
   const [movementsList, setMovementsList] = useState([]);
@@ -43,7 +42,7 @@ const UltimosMovimentos = () => {
                 <td>{dataInvertida(mov.ano, mov.mes, mov.dia)}</td>
                 <td>{mov.conta}</td>
                 <td>{mov.tipo}</td>
-                <td>{formatAsMoney(mov.valor)}</td>
+                <td>Valor</td>
                 <td>{mov.descricao}</td>
               </tr>
             ))}

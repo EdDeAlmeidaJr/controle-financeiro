@@ -1,24 +1,24 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
-import Contas from '../interfaces/Contas';
+import Conta from '../interfaces/Conta';
 
-const PosicaoAtual = () => {
+const PosicaoAtual: any = () => {
   const [listaContas, setListaContas] = useState([]);
 
-  const getListaContas = async (): Contas => {
-    let conta = { id: 0, descricao: '', saldoImpl: '0.00' };
-    let result: Contas = [conta];
+  const getListaContas = async () => {
+    let result: Conta[] = [];
     (async () => {
       await fetch('http://localhost:3000/data/contas.json')
         .then((res) => res.json())
         .then((json) => (result = json));
     })();
-    return result;
+    console.log(result);
+    return result as Conta[];
   };
 
   useEffect(() => {
     (async () => {
-      await getListaContas().then;
+      await getListaContas().then((json) => setListaContas(json));
     })();
   });
 
@@ -27,7 +27,7 @@ const PosicaoAtual = () => {
       <div className="card-header">
         <h5>Posição atual</h5>
       </div>
-      <div className="card-body">Lista de contas e respectivos saldos, com um total no final.</div>
+      <div className="card-body"></div>
     </div>
   );
 };
